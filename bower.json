@@ -1,0 +1,16 @@
+{
+  "name": "adsnative-test",
+  "version": "0.0.0",
+  "authors": [
+    "Mikey Badr <mfbadr@gmail.com>"
+  ],
+  "main": "server/index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
