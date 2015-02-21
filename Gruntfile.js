@@ -35,6 +35,11 @@ module.exports = function(grunt){
     clean: {
       server: 'public'
     },
+    shell: {
+      bower: {
+        command: 'bower install'
+      }
+    },
     copy: {
       css: {
         cwd: 'client',
@@ -72,6 +77,6 @@ module.exports = function(grunt){
 
   grunt.registerTask('build', ['jade', 'jshint:all', 'jscs' ,'copy:css', 'copy:js', 'copy:assets', 'copy:favicon']);
   grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'build']);
+  grunt.registerTask('deploy', ['clean', 'build', 'shell:bower']);
 
 };
