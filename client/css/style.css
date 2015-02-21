@@ -1,3 +1,31 @@
 body{
-  background-color: #ccc;
+  background-color: #ecf0f1;
+}
+
+#header{
+  background: url('/assets/road.jpg') no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+#header h2{
+  margin-top: 15px;
+}
+
+.oldPost img{
+  height: 50px;
+  border-radius: 4px;
+  float: left;
+  margin-right: 4px;
+}
+
+.oldPost{
+  border: 2px solid black;
+  margin-bottom: 5px;
+  padding: 4px;
+
+}
+
+.oldPost h4{
+  margin: 0 4px;
 }

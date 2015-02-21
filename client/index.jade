@@ -11,18 +11,35 @@ html(lang='en')
     link(rel='stylesheet', href='/css/style.css')
   body
     .container-fluid
+      .row#header
+        h2.strong.text-center Welcome to my travel blog!
+        h2.small.text-center If only I could monetize without annoying my loyal users...
       .row
         .col-xs-8
-          h1 This site gets tons of views
-          h3 But I need ads to support myself!
-          hr
-          h3 ppp
+          h1 Newest post
+          p Beard Etsy Vice drinking vinegar hashtag, pour-over narwhal flannel artisan hoodie normcore wayfarers. Whatever lomo sustainable jean shorts wolf, street art farm-to-table lumbersexual. Thundercats direct trade health goth Pinterest, before they sold out Banksy semiotics. Farm-to-table pickled art party, gastropub organic Marfa forage 3 wolf moon banh mi messenger bag street art mustache trust fund Truffaut roof party. Four loko master cleanse VHS brunch biodiesel, XOXO sriracha. Etsy quinoa messenger bag XOXO beard deep v mumblecore cronut. Bushwick beard before they sold out, wolf deep v small batch Etsy 90's
+          p Health goth heirloom literally, Echo Park fingerstache bespoke Neutra meh McSweeney's biodiesel cliche. Leggings raw denim Godard jean shorts ugh. Biodiesel Pinterest lomo brunch seitan. Fixie 3 wolf moon umami Marfa blog cornhole. Shabby chic meh quinoa, Pitchfork Shoreditch hoodie Bushwick High Life PBR&B Echo Park church-key beard wolf meditation. Polaroid mustache lomo asymmetrical cornhole next level. Salvia photo booth direct trade forage roof party cray.
+          p Fashion axe yr Etsy Kickstarter, Williamsburg tofu Portland heirloom. Literally PBR&B 90's cray, Echo Park Marfa Williamsburg keytar direct trade put a bird on it yr twee. Locavore sriracha street art, fashion axe distillery selfies pour-over tousled PBR&B chambray cornhole. Tote bag flannel brunch, YOLO hashtag fashion axe Shoreditch kale chips. Selfies lumbersexual seitan, crucifix farm-to-table fap wolf. Messenger bag kogi cold-pressed, locavore craft beer cardigan lo-fi next level ethical try-hard fanny pack tilde. Bushwick jean shorts chambray, YOLO semiotics mumblecore lo-fi actually migas trust fund art party chillwave scenester.
         .col-xs-4
           br
-          p Welcome to my awesome blog! I spend a ton of time creating useful content, but I need to support myself. If only there were a way to do this without annoying my users...
+          h2 Older posts
+          .oldPost
+            a(href='/')
+              h4.strong Thailand
+            img(src='assets/small/beach.png')
+            p Here's a post about that time I went to thailand. aowiejfoaiwejfoiawjefoiajweofiajweofijaweo
+          .oldPost
+            a(href='/')
+              h4.strong Chicago
+            img(src='assets/small/fall.png')
+            p Here's a post about that time I went to Chicago. iajoweifjaoweifjaoiwejf
+          .oldPost
+            a(href='/')
+              h4.strong Portland
+            img(src='assets/small/bridge.png')
+            p Here's a post about that time I went to Portland
+          #adgoeshere
+
 
     script(src='/vendor/jquery/dist/jquery.min.js')
-    //script(src='/js/vendor/async.js')
-    //script(src='/js/vendor/underscore-min.js')
-    //script(src='/js/vendor/underscore-contrib.min.js')
-    //script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
