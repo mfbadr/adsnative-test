@@ -72,5 +72,6 @@ module.exports = function(grunt){
 
   grunt.registerTask('build', ['jade', 'jshint:all', 'jscs' ,'copy:css', 'copy:js', 'copy:assets', 'copy:favicon']);
   grunt.registerTask('default', ['build', 'watch']);
+  grunt.registerTask('deploy', ['clean', 'build']);
 
 };
