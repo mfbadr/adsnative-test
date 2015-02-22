@@ -7,9 +7,12 @@ html(lang='en')
     title AdsAdsAds!
     link(href='/vendor/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
     link(href='/vendor/bootstrap/dist/css/bootstrap-theme.min.css', rel='stylesheet')
-    //link(href='/font-awesome/css/font-awesome.min.css', rel='stylesheet')
     link(rel='stylesheet', href='/css/style.css')
   body
+    script.
+      var _AdsNativeOpts = {
+        blockAdLoad: true
+      };
     .container-fluid
       .row#header
         h2.strong.text-center Welcome to my travel blog!
@@ -27,19 +30,21 @@ html(lang='en')
             a(href='/')
               h4.strong Thailand
             img(src='assets/small/beach.png')
-            p Here's a post about that time I went to thailand. aowiejfoaiwejfoiawjefoiajweofiajweofijaweo
+            p Here's a post about that time I went to thailand.
           .oldPost
             a(href='/')
               h4.strong Chicago
             img(src='assets/small/fall.png')
-            p Here's a post about that time I went to Chicago. iajoweifjaoweifjaoiwejf
+            p Here's a post about that time I went to Chicago.
           .oldPost
             a(href='/')
               h4.strong Portland
             img(src='assets/small/bridge.png')
-            p Here's a post about that time I went to Portland
+            p Here's a post about that time I went to Portland.
           #adgoeshere
-
 
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
+    script(type='text/javascript', src='//static.adsnative.com/static/js/render.v1.js')
+    script(src='/js/ads.js')
+
