@@ -4,6 +4,7 @@
 
 var infeed_placement = new AdsNative('PLACEMENT-KEY', ['travel', 'food']);
 infeed_placement.fetchAd(function(status){
+  console.log('status', status);
   if(status){ // If returned a valid campaign to display.
     $(document).ready(function(){
       var didDisplay = infeed_placement.displayAd('adgoeshere');
