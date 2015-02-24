@@ -2,7 +2,8 @@
 /* global AdsNative */
 'use strict';
 
-var infeed_placement = new AdsNative('PLACEMENT-KEY', ['travel', 'food']);
+var infeed_placement = new AdsNative('OgvwWraDkZxXRI1yFt090xdfxtNcnsTB7xMHUqUP', ['travel', 'food']);
+console.log('infeed_placement', infeed_placement);
 infeed_placement.fetchAd(function(status){
   console.log('status', status);
   if(status){ // If returned a valid campaign to display.
@@ -12,7 +13,9 @@ infeed_placement.fetchAd(function(status){
         console.log('Ad could not be displayed. Most likely due to invalid element ID or double rendering of ad.');
       }
     });
+  }else{
+    console.log('status is ', status, ' - Unable to fetchAd');
   }
 });
 
-console.log('ads.js', infeed_placement);
+//console.log('AdsNative', AdsNative);
